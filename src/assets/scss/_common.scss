@@ -1,0 +1,116 @@
+html, body {
+  font-size: 16px;
+  font-family: 'Circe', sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1335px;
+  }
+}
+
+.main-logo {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 72px;
+  color: #c2185b;
+  letter-spacing: -0.6px;
+
+  .main-logo__text {
+    opacity: 0.3;
+    color: #000000;
+    font-weight: 400;
+    line-height: 72px;
+    font-size: 24px;
+    margin-left: -18px;
+  }
+}
+
+.button {
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+
+//////
+
+
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.2);
+}
+
+/* Style the buttons inside the tab */
+.tab .tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-left: 0;
+  margin-right: 100px;
+
+  color: #263238;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.24px;
+}
+
+/* Change background color of buttons on hover */
+
+/* Create an active/current tablink class */
+.tab .tablinks.active {
+  border-bottom: 4px solid #0091ea;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.slider-shadow {
+  max-width: 1970px;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    width: 310px;
+    height: 390px;
+    box-shadow: inset 112px -67px 135px -27px #fff;
+    left: 0;
+    z-index: 100;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 310px;
+    height: 390px;
+    box-shadow: inset -112px -67px 135px -27px #fff;
+    right: 0;
+    z-index: 100;
+    top: 0;
+  }
+}
