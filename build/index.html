@@ -349,57 +349,108 @@
     <section class="section search-section">
         <h1 class="h1 search-section__title">Система поиска низких цен</h1>
         <div class="search-container">
-            <div>
-                <div>
-                    <i></i>
-                    <span>Отели</span>
-                </div>
-                <div>
-                    <i></i>
-                    <span>Рейсы</span>
-                </div>
+            <div class="">
+                <ul class="nav nav-tabs search-section__tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#hotels" role="tab" aria-controls="home" aria-selected="true">
+                            <div class="search-section__tab search-section__tab-left">
+                                <i class="bed_icon"></i>Отели
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#flights" role="tab" aria-controls="profile" aria-selected="false">
+                            <div class="search-section__tab search-section__tab-right">
+                                <i class="aeroplane-icon"></i>Рейсы
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div>
-                            <div>
-                                Выберете
+                        <div class="tab-content" id="myTabContent3">
+                            <div class="tab-pane fade show active search-section__tab-content" id="hotels" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="search-scheme">
+                                    <div class="search-scheme__choice">
+                                        <span class="search-scheme__choice-icon-world"></span>
+                                        <span class="search-scheme__choice-text">Выберете</span>
+                                        <span class="search-scheme__choice-icon-arrow"></span>
+                                    </div>
+                                    <form class="search-scheme__form" action="">
+                                        <input class="search-scheme__form-input-main" type="text" placeholder="Или введите город, страну, аэропорт">
+                                    </form>
+                                    <div class="search-scheme__checkIn search-scheme__date">
+                                        <span class="search-scheme__date-text">Заезд</span>
+                                        <span class="search-scheme__date-number">01.07.2018</span>
+                                    </div>
+                                    <div class="search-scheme__checkOut search-scheme__date">
+                                        <span class="search-scheme__date-text">Выезд</span>
+                                        <span class="search-scheme__date-number">09.07.2018</span>
+                                    </div>
+                                    <div class="search-scheme__guests">
+                                        <span class="search-scheme__guests-text">Гости</span>
+                                        <span class="search-scheme__guests-adults">
+                                            <i class="search-scheme__guests-adults-icon"></i>
+                                            <span class="search-scheme__guests-adults-quantity">1</span>
+                                        </span>
+                                        <span class="search-scheme__guests-children">
+                                            <i class="search-scheme__guests-children-icon"></i>
+                                            <span class="search-scheme__guests-children-quantity">2</span>
+                                         </span>
+                                    </div>
+                                    <div class="search-scheme__budget">
+                                        <span class="search-scheme__budget-test">Бюджет</span>
+                                        <a class="search-scheme__budget-status" href="#">средний</a>
+                                    </div>
+                                    <button class="search-scheme__button">
+                                        <i class="search-scheme__button-icon"></i>
+                                        <span class="search-scheme__button-text">Найти</span>
+                                    </button>
+                                </div>
+                                <a class="site-comparison" href="#">
+                                    <i class="site-comparison__icon"></i>
+                                    <span class="site-comparison__text">Сравнить цены на других сайтах</span>
+                                </a>
                             </div>
-                            <form action="">
-                                <input type="text" value="Или введите город, страну, аэропорт">
-                            </form>
-                            <div>
-                                <span>Заезд</span>
-                                <span>01.07.2018</span>
+                            <div class="tab-pane fade search-section__tab-content" id="flights" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="search-scheme">
+                                    <div class="search-scheme__choice search-scheme__choice-direction">
+                                        <span class="search-scheme__choice-icon-world"></span>
+                                        <span class="search-scheme__choice-text">Направления</span>
+                                        <span class="search-scheme__choice-icon-arrow"></span>
+                                    </div>
+                                    <div class="search-scheme__moving">
+                                        <div class="search-scheme__departure">
+                                            <p class="search-scheme__moving-text">Город отправления</p>
+                                            <span class="search-scheme__moving-city">Лондон</span>
+                                        </div>
+                                        <i class="search-scheme__moving-arrow"></i>
+                                        <div class="search-scheme__appointment">
+                                            <p class="search-scheme__moving-text">Город назначения</p>
+                                            <span class="search-scheme__moving-city">Рим</span>
+                                        </div>
+                                    </div>
+                                    <div class="search-scheme__checkIn search-scheme__date">
+                                        <span class="search-scheme__date-text">Заезд</span>
+                                        <span class="search-scheme__date-number">01.07.2018</span>
+                                    </div>
+                                    <div class="search-scheme__checkOut search-scheme__date">
+                                        <span class="search-scheme__date-text">Выезд</span>
+                                        <span class="search-scheme__date-number">09.07.2018</span>
+                                    </div>
+                                    <div class="search-scheme__passengers">
+                                        <p class="search-scheme__passengers-title">Пассажириы</p>
+                                        <span class="search-scheme__passengers-text">2, эконом</span>
+                                    </div>
+                                    <button class="search-scheme__button">
+                                        <i class="search-scheme__button-icon"></i>
+                                        <span class="search-scheme__button-text">Найти</span>
+                                    </button>
+                                </div>
                             </div>
-                            <div>
-                                <span>Выезд</span>
-                                <span>09.07.2018</span>
-                            </div>
-                            <div>
-                                <span>Гости</span>
-                                <span>
-                                    <i></i>
-                                    1
-                                </span>
-                                <span>
-                                    <i></i>
-                                    2
-                                </span>
-                            </div>
-                            <div>
-                                <span>Бюджет</span>
-                                <a href="#">средний</a>
-                            </div>
-                            <button><i></i><span>Найти</span></button>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <a href="#">
-                            <i></i>
-                            <span>Сравнить цены на других сайтах</span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -420,12 +471,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
 
     <section class="section directions-month">
         <div class="container-fluid">
@@ -474,7 +519,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="section country-city">
         <div class="container">
@@ -633,7 +677,7 @@
                                     </div>
                                 </div>
                                 <div class="card-country">
-                                    <div class="card-country__img" style="background-image: url(assets/img/card-country-1.png)"></div>
+                                    <div class="card-country__img" style="background-image: url(assets/img/card-country-2.png)"></div>
                                     <div class="card-country__content">
                                         <span class="card-country__title">Германия</span>
                                         <span class="card-country__hotel"><i class="card-country__hotel-icon"></i>54 отеля</span>
@@ -656,7 +700,7 @@
                                     </div>
                                 </div>
                                 <div class="card-country">
-                                    <div class="card-country__img" style="background-image: url(assets/img/card-country-1.png)"></div>
+                                    <div class="card-country__img" style="background-image: url(assets/img/card-country-3.png)"></div>
                                     <div class="card-country__content">
                                         <span class="card-country__title">Германия</span>
                                         <span class="card-country__hotel"><i class="card-country__hotel-icon"></i>54 отеля</span>
@@ -931,8 +975,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="section section_hotel">
         <div class="container">
             <h2 class="h2 text-center">Популярные отели в лучших городах мира</h2>
@@ -7127,10 +7169,86 @@
     </div>
 </footer>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal modal-main fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
+            <ul class="nav nav-pills mb-3 modal-main-tabs" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Вход</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Регистрация</a>
+                </li>
+            </ul>
+            <div class="tab-content " id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="modal-authorization">
+                        <button class="modal-authorization__fb">
+                            <span class="modal-authorization__fb-btnMini">
+                                <i></i>
+                            </span>
+                            <span class="modal-authorization__fb-btn">
+                                <span>Войти через Facebook</span>
+                            </span>
+                        </button>
+                        <button class="modal-authorization__google">
+                            <span class="modal-authorization__google-btnMini">
+                                <i></i>
+                            </span>
+                            <span class="modal-authorization__google-btn">
+                                <span>Войти через Google</span>
+                            </span>
+                        </button>
 
+                        <form class="modal-authorization__form">
+                            <div class="form-group modal-authorization__border">
+                                <label for="exampleInputEmail1">Ваш e-mail</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="father123@gmail.com">
+                            </div>
+                            <div class="form-group modal-authorization__border">
+                                <label for="exampleInputPassword1">Пароль</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="21112236р9">
+                            </div>
+                        </form>
+
+                        <div class="modal-authorization__block">
+                            <button class="btn btn-secondary button modal-authorization__block-btn">Вход</button>
+                            <div class="modal-authorization__block-content">
+                                <a class="modal-authorization__block-content-link" href="#">Забыли пароль?</a>
+                                <p class="modal-authorization__block-content-text">Укажите ваш E-mail и в течение 15 минут мы пришлем вам новый пароль.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="modal-registration">
+                        <form>
+                            <div class="form-group modal-authorization__border">
+                                <label for="exampleInputEmail2">Ваш e-mail</label>
+                                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="father123@gmail.com">
+                            </div>
+                            <div class="form-group modal-authorization__border">
+                                <label for="exampleInputEmail3">ФИО</label>
+                                <input type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp1" placeholder="21112236р9">
+                            </div>
+                            <div class="form-group modal-authorization__border">
+                                <label for="exampleInputPassword2">Пароль</label>
+                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                            </div>
+                            <div class="form-group modal-authorization__border">
+                                <label for="exampleInputPassword3">Повторите пароль</label>
+                                <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-secondary button modal-registration__btn">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-close" data-toggle="modal" data-target="#exampleModalCenter"></div>
         </div>
     </div>
 </div>
