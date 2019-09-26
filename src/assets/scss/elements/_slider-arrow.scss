@@ -1,0 +1,51 @@
+.slider-arrow {
+  position: relative;
+  .owl-nav {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 1300px;
+  }
+
+  button {
+    position: absolute;
+    min-width: 50px;
+    z-index: 10000000;
+    outline: none;
+
+    span {
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.41);
+      background-color: #ffffff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+  }
+
+  .owl-prev {
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .owl-next {
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.section_hotel {
+  .slider-arrow button span {
+    position: relative;
+    top: -50px;
+  }
+}

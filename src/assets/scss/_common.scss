@@ -3,6 +3,33 @@ html, body {
   font-family: 'Circe', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+h1, .h1 {
+  font-size: 54px;
+  font-weight: bold;
+  letter-spacing: -0.54px;
+}
+
+h2, .h2 {
+  color: #263238;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: -0.36px;
+}
+
+.btn-arrow {
+  background: url("../img/btn-arrow.png") no-repeat center;
+  background-size: 100% auto;
+  width: 8px;
+  height: 14px;
+  display: block;
+  margin-left: 18px;
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1335px;
@@ -12,7 +39,6 @@ html, body {
 .main-logo {
   font-size: 60px;
   font-weight: 800;
-  line-height: 72px;
   color: #c2185b;
   letter-spacing: -0.6px;
 
@@ -22,7 +48,7 @@ html, body {
     font-weight: 400;
     line-height: 72px;
     font-size: 24px;
-    margin-left: -18px;
+    margin-left: -9px;
   }
 }
 
@@ -51,7 +77,8 @@ html, body {
   outline: none;
   cursor: pointer;
   padding-left: 0;
-  margin-right: 100px;
+  margin-right: 60px;
+  margin-left: 40px;
 
   color: #263238;
   font-size: 24px;
@@ -68,10 +95,9 @@ html, body {
 }
 
 /* Style the tab content */
-.tabcontent {
+.slider-content .tabcontent {
   display: none;
   padding: 6px 12px;
-  -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
 }
 
@@ -97,8 +123,8 @@ html, body {
     content: '';
     position: absolute;
     width: 310px;
-    height: 390px;
-    box-shadow: inset 112px -67px 135px -27px #fff;
+    height: 500px;
+    box-shadow: inset 112px -67px 100px -27px #fff;
     left: 0;
     z-index: 100;
   }
@@ -107,10 +133,42 @@ html, body {
     content: '';
     position: absolute;
     width: 310px;
-    height: 390px;
-    box-shadow: inset -112px -67px 135px -27px #fff;
+    height: 500px;
+    box-shadow: inset -112px -67px 100px -27px #fff;
     right: 0;
     z-index: 100;
     top: 0;
   }
+}
+
+.tabbable {
+  margin-bottom: 50px;
+}
+
+.slider-city {
+  position: relative;
+
+  .owl-nav {
+    position: absolute;
+    top: 22px;
+    width: 100%;
+
+    .disabled {
+      display: none;
+    }
+  }
+
+  .owl-prev {
+    left: 0;
+    position: absolute;
+  }
+
+  .owl-next {
+    right: 0;
+    position: absolute;
+  }
+}
+
+.owl-carousel .owl-stage-outer {
+  z-index: 1;
 }
