@@ -15,7 +15,7 @@ jQuery(document).ready(function(){
         $(this).parent().removeClass('active');
     });
 
-    jQuery('.search-scheme__choice').click(function () {
+    jQuery('.search-scheme__choice').hover(function () {
         jQuery('.search-scheme__dropdown').toggleClass('active');
     });
 
@@ -47,7 +47,17 @@ jQuery(document).ready(function(){
     $('.search-scheme__dropdown .nav-link').on('mouseover', function (e) {
         e.preventDefault();
         $(this).tab('show')
-    })
+    });
+
+    $(".section_trips a").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500,
+            easing: "swing"
+        });
+        return false;
+    });
 });
 
 jQuery(function($){

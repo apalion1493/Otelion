@@ -17,8 +17,11 @@
  display: flex;
  align-items: center;
  justify-content: center;
- cursor: pointer;
  position: relative;
+
+ .search-scheme__dropdown {
+  min-width: 1305px;
+ }
 }
 
 .search-scheme__choice-icon-world {
@@ -34,6 +37,7 @@
  color: #ffffff;
  font-size: 18px;
  font-weight: 500;
+ cursor: pointer;
 }
 
 .search-scheme__choice-icon-arrow {
@@ -292,5 +296,12 @@
 
  .search-scheme__checkIn {
   max-width: 294.5px;
+ }
+
+ .search-scheme__choice {
+
+  .search-scheme__dropdown {
+   min-width: 930px;
+  }
  }
 }
