@@ -223,3 +223,37 @@ h2, .h2 {
 .search-section__tab-content {
   position: relative;
 }
+
+.btn-arrow_bottom {
+  transform: rotate(90deg);
+}
+
+.country-city-slider {
+  margin-top: 40px;
+}
+
+@media (max-width: 1305px) {
+  .slider-shadow:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    box-shadow: inset -46px -67px 54px -27px #fff;
+    right: 0;
+    z-index: 100;
+    top: 0;
+  }
+
+  .slider-shadow:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    box-shadow: inset 46px -67px 54px -27px #fff;
+    left: 0;
+    z-index: 100;
+    top: 0;
+  }
+}
+
+

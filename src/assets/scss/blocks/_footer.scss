@@ -254,3 +254,33 @@
     margin-left: 12px;
   }
 }
+
+
+@media (max-width: 1199.98px) {
+  .footer-subscription__button {
+    height: 70px;
+  }
+
+  .footer-subscription {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .footer-subscription__slogan {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-subscription__form {
+    max-width: 670px;
+  }
+
+  .footer-subscription__form-block {
+    width: 50%;
+  }
+
+  .footer-subscription__form-block-first {
+    max-width: 100%;
+  }
+
+}

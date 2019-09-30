@@ -18,6 +18,36 @@ jQuery(document).ready(function(){
     jQuery('.search-scheme__choice').click(function () {
         jQuery('.search-scheme__dropdown').toggleClass('active');
     });
+
+    jQuery('.search-scheme__guests-budget-wrapper').click(function () {
+        jQuery('.dropdown-container__check-setting').toggleClass('active');
+    });
+
+    jQuery('.header__currency').hover(function () {
+        jQuery('.dropdown-container_currency').toggleClass('active');
+    });
+    jQuery('.header__viewed-link').click(function () {
+        jQuery('.dropdown-container__viewed').toggleClass('active');
+    });
+    jQuery('.header__language').hover(function () {
+        jQuery('.dropdown-container_language').toggleClass('active');
+    });
+
+    jQuery('.header__menu-link-hotel').click(function () {
+        jQuery('.dropdown-container__header').toggleClass('active');
+    });
+
+    jQuery('.header__favorites-link').click(function () {
+        jQuery('.dropdown-container__favorites').toggleClass('active');
+    });
+
+
+
+
+    $('.search-scheme__dropdown .nav-link').on('mouseover', function (e) {
+        e.preventDefault();
+        $(this).tab('show')
+    })
 });
 
 jQuery(function($){

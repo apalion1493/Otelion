@@ -38,6 +38,11 @@
 .dropdown-container_language {
   padding: 36px 43px;
   width: 653px;
+  display: none;
+}
+
+.dropdown-container_language.active {
+  display: block;
 }
 
 .dropdown-container_language-title {
@@ -79,10 +84,19 @@
 .dropdown-container_currency {
   width: 850px;
   padding: 36px 20px;
+  display: none;
+}
+
+.dropdown-container_currency.active {
+  display: block;
 }
 
 .dropdown-container_currency-list {
   list-style-type: none;
+}
+
+.dropdown-container_currency-item {
+  cursor: pointer;
 }
 
 .dropdown-container_currency-title {
@@ -151,6 +165,10 @@
 ///////
 
 .search-scheme__dropdown.active {
+  display: flex;
+}
+
+.header__menu-ul.active {
   display: flex;
 }
 
@@ -264,11 +282,15 @@
 
 
 .dropdown-container.dropdown-container__check-setting {
-  display: block;
+  display: none;
   top: 50px;
   min-width: 324px;
   padding: 27px 22px 20px;
   cursor: auto;
+}
+
+.dropdown-container.dropdown-container__check-setting.active {
+  display: block;
 }
 
 .dropdown-container__check-setting-container {
@@ -418,7 +440,19 @@
   font-weight: 400;
 }
 
+.dropdown-container.dropdown-container__viewed {
+  display: none;
+}
+
+.dropdown-container.dropdown-container__viewed.active {
+  display: block;
+}
+
 .dropdown-container.dropdown-container__favorites  {
+  display: none;
+}
+
+.dropdown-container.dropdown-container__favorites.active {
   display: block;
 }
 
@@ -507,5 +541,139 @@
     font-weight: 400;
     display: inline-block;
     margin-left: auto;
+  }
+}
+
+.dropdown-container__favorites-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+}
+
+.dropdown-container.dropdown-container__header.active {
+  display: block;
+}
+
+.dropdown-container.dropdown-container__header {
+  display: none;
+  width: 100%;
+  top: 47px;
+
+  .search-scheme__dropdown {
+    width: 100%;
+    display: flex;
+    top: 0;
+  }
+
+  .search-scheme__dropdown-content-item {
+    margin-bottom: 20px;
+  }
+
+  .search-scheme__dropdown-content-item-city {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 10px 10px 17px;
+
+    span {
+      text-shadow: 0 1px 5px rgba(4, 4, 4, 0.14);
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: -0.29px;
+    }
+
+    p {
+      text-shadow: 0 1px 5px rgba(4, 4, 4, 0.14);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: -0.19px;
+      line-height: 10px;
+    }
+  }
+
+  .search-scheme__dropdown-content-item-city-china {
+    background: url("../img/city-china-bg.png");
+    background-size: cover;
+  }
+
+  .search-scheme__dropdown-content-item-city-japan {
+    background: url("../img/city-japan-bg.png");
+    background-size: cover;
+  }
+
+  .search-scheme__dropdown-content-item-city-italia {
+    background: url("../img/city-italia-bg.png");
+    background-size: cover;
+  }
+
+  .search-scheme__dropdown-content-item-city-france {
+    background: url("../img/city-france-bg.png");
+    background-size: cover;
+  }
+
+  .search-scheme__dropdown-content-item-city-tailand {
+    background: url("../img/city-tailand-bg.png");
+    background-size: cover;
+  }
+
+  .search-scheme__dropdown-content-wrap {
+    .search-scheme__dropdown-content-block {
+      margin-left: 0;
+      border-right: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 2000px) {
+  .dropdown-container.dropdown-container_currency {
+    transform: translate(-92%,15px);
+  }
+
+  .dropdown-container.dropdown-container_currency:before {
+    left: initial;
+    right: 65px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .dropdown-container.dropdown-container_language {
+    transform: translate(-72%,15px);
+
+    &:before {
+      left: initial;
+      right: 175px;
+    }
+  }
+}
+
+@media (max-width: 1335px) {
+  .dropdown-container.dropdown-container_currency {
+    transform: translate(-100%,15px);
+  }
+
+  .dropdown-container.dropdown-container_currency:before {
+    left: initial;
+  }
+
+  .dropdown-container.dropdown-container_language {
+    transform: translate(-80%,15px);
+
+    &:before {
+      left: initial;
+      right: 125px;
+    }
   }
 }

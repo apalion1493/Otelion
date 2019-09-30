@@ -272,3 +272,25 @@
  min-width: 197px;
 }
 
+@media (max-width: 1199.98px) {
+ .search-scheme {
+  flex-wrap: wrap;
+ }
+ .search-scheme__form {
+  max-width: 750px;
+  border-bottom: 1px solid rgba(176,190,197,.2);
+ }
+
+ .search-scheme__moving {
+  max-width: 733px;
+  border-bottom: 1px solid rgba(176,190,197,.2);
+ }
+
+ .search-scheme__checkOut {
+  max-width: 295px;
+ }
+
+ .search-scheme__checkIn {
+  max-width: 294.5px;
+ }
+}
