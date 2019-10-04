@@ -42,12 +42,17 @@ jQuery(document).ready(function(){
     });
 
 
+    // $('.search-scheme__dropdown .nav-link').hover(function() {
+    //     $('.tab-pane-dropdown').removeClass('active show');
+    // });
+
+    // $('.search-scheme__dropdown .nav-link').on('mouseover', function (e) {
+    //     //$('.tab-pane-dropdown').removeClass('active show');
+    //     //e.preventDefault;
+    //     $(this).tab('show');
+    // });
 
 
-    $('.search-scheme__dropdown .nav-link').on('mouseover', function (e) {
-        e.preventDefault();
-        $(this).tab('show')
-    });
 
     $(".section_trips a").click(function() {
         $("html, body").animate({

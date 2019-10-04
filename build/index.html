@@ -21,7 +21,7 @@
                     <nav class="header__menu active">
                         <ul class="header__menu-ul">
                             <li class="header__menu-li active">
-                                <a class="header__menu-link  header__menu-link-hotel" href="#">Отели</a>
+                                <a class="header__menu-link " href="#">Отели</a>
                             </li>
                             <li class="header__menu-li">
                                 <a class="header__menu-link" href="#">Авиабилеты</a>
@@ -30,33 +30,42 @@
                                 <a class="header__menu-link" href="#">Куда поехать</a>
                             </li>
                             <li class="header__menu-li header__menu-city">
-                                <a class="header__menu-link header__menu-link_colorGrey" href="#">Топ города <i class="header__menu-city-icon"></i></a>
-                                <div style="display: none" class="dropdown-container">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at beatae commodi consectetur dignissimos, doloremque eaque eos et excepturi expedita facilis fugiat id in inventore iure laborum, maiores minus modi natus nulla odio officia officiis pariatur placeat porro praesentium provident quasi quisquam reiciendis repellat sed similique sint soluta unde ut voluptas voluptatibus! Adipisci animi dignissimos ducimus eos, est et impedit laudantium possimus quo voluptate? Asperiores cumque eaque libero molestias nobis, non, omnis qui quisquam quod repudiandae rerum veritatis. Accusantium adipisci aperiam asperiores cum debitis deserunt doloremque dolorum enim eos error ex fuga hic ipsa ipsam quae, quaerat repudiandae sed veritatis!</p>
-                                </div>
+                                <a class="header__menu-link header__menu-link_colorGrey header__menu-link-hotel" href="#">Топ города <i class="header__menu-city-icon"></i></a>
                             </li>
                         </ul>
 
                         <div class="dropdown-container dropdown-container__header">
                             <div class="row search-scheme__dropdown">
-                                <div class=" search-scheme__dropdown-first-column">
-                                    <div class="nav flex-column nav-pills" id="v-pills-tab10" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab11" data-toggle="pill" href="#v-pills-home10" role="tab" aria-controls="v-pills-home10" aria-selected="true">Мир</a>
-                                        <a class="nav-link" id="v-pills-profile-tab12" data-toggle="pill" href="#v-pills-profile11" role="tab" aria-controls="v-pills-profile11" aria-selected="false">Страны СНГ</a>
-                                        <a class="nav-link" id="v-pills-messages-tab13" data-toggle="pill" href="#v-pills-messages12" role="tab" aria-controls="v-pills-messages12" aria-selected="false">Европа</a>
-                                        <a class="nav-link" id="v-pills-settings-tab14" data-toggle="pill" href="#v-pills-settings13" role="tab" aria-controls="v-pills-settings13" aria-selected="false">Азия</a>
-                                        <a class="nav-link" id="v-pills-settings-tab15" data-toggle="pill" href="#v-pills-settings13" role="tab" aria-controls="v-pills-settings13" aria-selected="false">Северная Америка</a>
-                                        <a class="nav-link" id="v-pills-settings-tab16" data-toggle="pill" href="#v-pills-settings13" role="tab" aria-controls="v-pills-settings13" aria-selected="false">Южная Америка</a>
-                                        <a class="nav-link" id="v-pills-settings-tab17" data-toggle="pill" href="#v-pills-settings13" role="tab" aria-controls="v-pills-settings13" aria-selected="false">Карибы</a>
-                                        <a class="nav-link" id="v-pills-settings-tab18" data-toggle="pill" href="#v-pills-settings13" role="tab" aria-controls="v-pills-settings13" aria-selected="false">Африка</a>
-                                        <a class="nav-link" id="v-pills-settings-tab19" data-toggle="pill" href="#v-pills-settings13" role="tab" aria-controls="v-pills-settings13" aria-selected="false">Австралия и Океания</a>
+                                <div class="search-scheme__dropdown-first-column">
+                                    <!--<div class="nav flex-column nav-pills">-->
+                                        <!--<a class="nav-link active" data-toggle="tab" href="#v-pills-home10">Мир</a>-->
+                                        <!--<a class="nav-link" data-toggle="tab" href="#v-pills-profile11">Страны СНГ</a>-->
+                                        <!--<a class="nav-link" data-toggle="tab" href="#v-pills-messages12">Европа</a>-->
+                                        <!--<a class="nav-link" data-toggle="tab" href="#v-pills-settings13">Азия</a>-->
+                                        <!--<a class="nav-link" data-toggle="tab" href="#v-pills-settings14">Северная Америка</a>-->
+                                        <!--<a class="nav-link" data-toggle="tab" href="#v-pills-settings15">Южная Америка</a>-->
+                                        <!--<a class="nav-link" data-toggle="tab" href="#v-pills-settings16">Карибы</a>-->
+                                        <!--<a class="nav-link" data-toggle="tab" href="#v-pills-settings17">Африка</a>-->
+                                        <!--<a class="nav-link" data-toggle="tab" href="#v-pills-settings18">Австралия и Океания</a>-->
+                                    <!--</div>-->
+
+                                    <div class="nav flex-column nav-pills">
+                                        <a class="nav-link tablinks active" data-toggle="tab" onmouseover="openCity(event, 'v-pills-home10')" >Мир</a>
+                                        <a class="nav-link tablinks" data-toggle="tab" onmouseover="openCity(event, 'v-pills-profile11')" >Страны СНГ</a>
+                                        <a class="nav-link tablinks" data-toggle="tab" onmouseover="openCity(event, 'v-pills-messages12')" >Европа</a>
+                                        <a class="nav-link tablinks" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings13')" >Азия</a>
+                                        <a class="nav-link tablinks" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings14')" >Северная Америка</a>
+                                        <a class="nav-link tablinks" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings15')" >Южная Америка</a>
+                                        <a class="nav-link tablinks" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings16')" >Карибы</a>
+                                        <a class="nav-link tablinks" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings17')" >Африка</a>
+                                        <a class="nav-link tablinks" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings18')" >Австралия и Океания</a>
                                     </div>
                                 </div>
                                 <div class=" search-scheme__dropdown-second-column">
-                                    <div class="tab-content search-scheme__dropdown-content" id="v-pills-tabContent1">
-                                        <div class="tab-pane fade show active" id="v-pills-home10" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <div class="tab-content search-scheme__dropdown-content">
+                                        <div class="tab-pane tab-pane-dropdown fade active tabcontent" id="v-pills-home10" >
                                             <div class="search-scheme__dropdown-content-wrap">
-                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира</span>
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира1</span>
                                                 <div class="d-flex row">
                                                     <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
                                                         <div class="search-scheme__dropdown-content-item">
@@ -181,9 +190,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="v-pills-profile11" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-profile11">
                                             <div class="search-scheme__dropdown-content-wrap">
-                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира</span>
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира2</span>
                                                 <div class="d-flex row">
                                                     <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
                                                         <div class="search-scheme__dropdown-content-item">
@@ -308,9 +317,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="v-pills-messages12" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-messages12">
                                             <div class="search-scheme__dropdown-content-wrap">
-                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира</span>
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира3</span>
                                                 <div class="d-flex row">
                                                     <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
                                                         <div class="search-scheme__dropdown-content-item">
@@ -435,9 +444,644 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="v-pills-settings13" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                        <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings13">
                                             <div class="search-scheme__dropdown-content-wrap">
-                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира</span>
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира4</span>
+                                                <div class="d-flex row">
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings14">
+                                            <div class="search-scheme__dropdown-content-wrap">
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира5</span>
+                                                <div class="d-flex row">
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings15">
+                                            <div class="search-scheme__dropdown-content-wrap">
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира6</span>
+                                                <div class="d-flex row">
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings16">
+                                            <div class="search-scheme__dropdown-content-wrap">
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира7</span>
+                                                <div class="d-flex row">
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings17">
+                                            <div class="search-scheme__dropdown-content-wrap">
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира8</span>
+                                                <div class="d-flex row">
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item ">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-china" href="#">
+                                                                <span>Китай</span>
+                                                                <p>Пекин</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-japan" href="#">
+                                                                <span>Япония</span>
+                                                                <p>Токио</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-italia" href="#">
+                                                                <span>Италия</span>
+                                                                <p>Рим</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-france" href="#">
+                                                                <span>Франция</span>
+                                                                <p>Париж</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-scheme__dropdown-content-item">
+                                                            <a class="search-scheme__dropdown-content-item-city search-scheme__dropdown-content-item-city-tailand" href="#">
+                                                                <span>Тайланд</span>
+                                                                <p>Банкок</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings18">
+                                            <div class="search-scheme__dropdown-content-wrap">
+                                                <span class="search-scheme__dropdown-content-title">Самые популярные города мира9</span>
                                                 <div class="d-flex row">
                                                     <div class="search-scheme__dropdown-content-block col-xl col-md-4 col-lg-3">
                                                         <div class="search-scheme__dropdown-content-item">
@@ -1033,23 +1677,35 @@
 
                                         <div class="row search-scheme__dropdown">
                                             <div class=" search-scheme__dropdown-first-column">
+                                                <!--<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">-->
+                                                    <!--<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Мир</a>-->
+                                                    <!--<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Страны СНГ</a>-->
+                                                    <!--<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Европа</a>-->
+                                                    <!--<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Азия</a>-->
+                                                    <!--<a class="nav-link" id="v-pills-settings-tab1" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Северная Америка</a>-->
+                                                    <!--<a class="nav-link" id="v-pills-settings-tab2" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Южная Америка</a>-->
+                                                    <!--<a class="nav-link" id="v-pills-settings-tab3" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Карибы</a>-->
+                                                    <!--<a class="nav-link" id="v-pills-settings-tab4" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Африка</a>-->
+                                                    <!--<a class="nav-link" id="v-pills-settings-tab5" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Австралия и Океания</a>-->
+                                                <!--</div>-->
+
                                                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Мир</a>
-                                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Страны СНГ</a>
-                                                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Европа</a>
-                                                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Азия</a>
-                                                    <a class="nav-link" id="v-pills-settings-tab1" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Северная Америка</a>
-                                                    <a class="nav-link" id="v-pills-settings-tab2" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Южная Америка</a>
-                                                    <a class="nav-link" id="v-pills-settings-tab3" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Карибы</a>
-                                                    <a class="nav-link" id="v-pills-settings-tab4" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Африка</a>
-                                                    <a class="nav-link" id="v-pills-settings-tab5" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Австралия и Океания</a>
+                                                    <a class="nav-link tablinks active" id="v-pills-home-tab" data-toggle="tab" onmouseover="openCity(event, 'v-pills-home')">Мир</a>
+                                                    <a class="nav-link tablinks" id="v-pills-profile-tab" data-toggle="tab" onmouseover="openCity(event, 'v-pills-profile')">Страны СНГ</a>
+                                                    <a class="nav-link tablinks" id="v-pills-messages-tab" data-toggle="tab" onmouseover="openCity(event, 'v-pills-messages')">Европа</a>
+                                                    <a class="nav-link tablinks" id="v-pills-settings-tab" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings')">Азия</a>
+                                                    <a class="nav-link tablinks" id="v-pills-settings-tab1" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings1')">Северная Америка</a>
+                                                    <a class="nav-link tablinks" id="v-pills-settings-tab2" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings2')">Южная Америка</a>
+                                                    <a class="nav-link tablinks" id="v-pills-settings-tab3" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings3')">Карибы</a>
+                                                    <a class="nav-link tablinks" id="v-pills-settings-tab4" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings4')">Африка</a>
+                                                    <a class="nav-link tablinks" id="v-pills-settings-tab5" data-toggle="tab" onmouseover="openCity(event, 'v-pills-settings5')">Австралия и Океания</a>
                                                 </div>
                                             </div>
                                             <div class=" search-scheme__dropdown-second-column">
                                                 <div class="tab-content search-scheme__dropdown-content" id="v-pills-tabContent">
-                                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                                         <div class="search-scheme__dropdown-content-wrap">
-                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке</span>
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке1</span>
                                                             <div class="d-flex justify-content-between">
                                                                 <div class="search-scheme__dropdown-content-block">
                                                                     <ul class="search-scheme__dropdown-content-list">
@@ -1169,9 +1825,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                                                         <div class="search-scheme__dropdown-content-wrap">
-                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке</span>
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке2</span>
                                                             <div class="d-flex justify-content-between">
                                                                 <div class="search-scheme__dropdown-content-block">
                                                                     <ul class="search-scheme__dropdown-content-list">
@@ -1291,9 +1947,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                                         <div class="search-scheme__dropdown-content-wrap">
-                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке</span>
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке3</span>
                                                             <div class="d-flex justify-content-between">
                                                                 <div class="search-scheme__dropdown-content-block">
                                                                     <ul class="search-scheme__dropdown-content-list">
@@ -1413,9 +2069,619 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                                                         <div class="search-scheme__dropdown-content-wrap">
-                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке</span>
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке4</span>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="search-scheme__dropdown-content-wrap">
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке5</span>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="search-scheme__dropdown-content-wrap">
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке6</span>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings3" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="search-scheme__dropdown-content-wrap">
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке7</span>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="search-scheme__dropdown-content-wrap">
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке8</span>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="search-scheme__dropdown-content-block">
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                    <ul class="search-scheme__dropdown-content-list">
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-title">Австралия</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Рим</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Вероня</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-text">Амальфи</a></li>
+                                                                        <li class="search-scheme__dropdown-content-item"><a href="#" class="search-scheme__dropdown-content-item-link">Показать еще</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane tab-pane-dropdown fade tabcontent" id="v-pills-settings5" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="search-scheme__dropdown-content-wrap">
+                                                            <span class="search-scheme__dropdown-content-title">Самые популярные страны Африке9</span>
                                                             <div class="d-flex justify-content-between">
                                                                 <div class="search-scheme__dropdown-content-block">
                                                                     <ul class="search-scheme__dropdown-content-list">
@@ -2257,43 +3523,49 @@
                             </div>
                             <span class="continent-tab__title">Мир</span>
                         </a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list1-2" data-toggle="list" href="#list-profile1-2" role="tab" aria-controls="profile">
+                        <a class="list-group-item list-group-item-action" id="list-settings-list1-2" data-toggle="list" href="#list-profile1-2" role="tab" aria-controls="settings5">
+                            <div class="continent-tab__icon">
+                                <i class="continent-tab__icon continent-tab__icon-russia"></i>
+                            </div>
+                            <span class="continent-tab__title">Россия</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list1-3" data-toggle="list" href="#list-messages1-3" role="tab" aria-controls="profile">
                             <div class="continent-tab__icon">
                                 <i class="continent-tab__icon continent-tab__icon-sng"></i>
                             </div>
                             <span class="continent-tab__title">СНГ</span>
                         </a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list1-3" data-toggle="list" href="#list-messages1-3" role="tab" aria-controls="messages">
+                        <a class="list-group-item list-group-item-action" id="list-messages-list1-4" data-toggle="list" href="#list-settings1-4" role="tab" aria-controls="messages">
                             <div class="continent-tab__icon">
                                 <i class="continent-tab__icon continent-tab__icon-europe"></i>
                             </div>
                             <span class="continent-tab__title">Европа</span>
                         </a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list1-4" data-toggle="list" href="#list-settings1-4" role="tab" aria-controls="settings">
+                        <a class="list-group-item list-group-item-action" id="list-settings-list1-5" data-toggle="list" href="#list-settings1-5" role="tab" aria-controls="settings">
                             <div class="continent-tab__icon">
                                 <i class="continent-tab__icon continent-tab__icon-asia"></i>
                             </div>
                             <span class="continent-tab__title">Азия</span>
                         </a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list1-5" data-toggle="list" href="#list-settings1-5" role="tab" aria-controls="settings1">
+                        <a class="list-group-item list-group-item-action" id="list-settings-list1-6" data-toggle="list" href="#list-settings1-6" role="tab" aria-controls="settings1">
                             <div class="continent-tab__icon">
                                 <i class="continent-tab__icon continent-tab__icon-africa"></i>
                             </div>
                             <span class="continent-tab__title">Африка</span>
                         </a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list1-6" data-toggle="list" href="#list-settings1-6" role="tab" aria-controls="settings2">
+                        <a class="list-group-item list-group-item-action" id="list-settings-list1-7" data-toggle="list" href="#list-settings1-7" role="tab" aria-controls="settings2">
                             <div class="continent-tab__icon">
                                 <i class="continent-tab__icon continent-tab__icon-n_America"></i>
                             </div>
                             <span class="continent-tab__title">Сев. Америка</span>
                         </a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list1-7" data-toggle="list" href="#list-settings1-7" role="tab" aria-controls="settings3">
+                        <a class="list-group-item list-group-item-action" id="list-settings-list1-8" data-toggle="list" href="#list-settings1-8" role="tab" aria-controls="settings3">
                             <div class="continent-tab__icon">
                                 <i class="continent-tab__icon continent-tab__icon-s_America"></i>
                             </div>
                             <span class="continent-tab__title">Юж. Америка</span>
                         </a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list1-8" data-toggle="list" href="#list-settings1-8" role="tab" aria-controls="settings4">
+                        <a class="list-group-item list-group-item-action" id="list-settings-list1-9" data-toggle="list" href="#list-settings1-9" role="tab" aria-controls="settings4">
                             <div class="continent-tab__icon">
                                 <i class="continent-tab__icon continent-tab__icon-australia"></i>
                             </div>
@@ -8189,6 +9461,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="list-settings1-9" role="tabpanel" aria-labelledby="list-settings-list1-9">
+                            <div class="container tabbable">
+                                <div class="slider-city owl-carousel tab" id="nav-tab9" role="tablist">
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-12')"  data-toggle="tab"  role="tab">Популярное</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-13')"  data-toggle="tab"  role="tab">Мюнхен</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-14')"  data-toggle="tab"  role="tab">Берлин</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-15')"  data-toggle="tab"  role="tab">Гумбург</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-16')"  data-toggle="tab"  role="tab">Штутгарт</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-17')"  data-toggle="tab"  role="tab">Мюнхен</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-18')"  data-toggle="tab"  role="tab">Мюнхен</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-19')"  data-toggle="tab"  role="tab">Мюнхен1</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-20')"  data-toggle="tab"  role="tab">Мюнхен2</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-21')"  data-toggle="tab"  role="tab">Мюнхен3</button>
+                                    <button class="tablinks" onclick="openCity(event, 'slider-city-22')"  data-toggle="tab"  role="tab">Мюнхен4</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -8526,8 +9815,10 @@
 
 <script src="assets/js/jquery/jquery.min.js"></script>
 <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-<script src="assets/js/owl/owl.carousel.min.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script src="assets/js/owl/owl.carousel.min.js"></script>
+
 <script>
     $(document).ready(function(){
         $(".directions-month__slider").owlCarousel({
@@ -8536,12 +9827,6 @@
             autoWidth:true,
             dots:false,
             nav:true,
-            // responsive: {
-            //     768: {
-            //         autoWidth:false,
-            //         items:4,
-            //     }
-            // }
         });
 
         $(".direction-slider").owlCarousel({

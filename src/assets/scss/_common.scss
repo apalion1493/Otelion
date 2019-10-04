@@ -124,9 +124,11 @@ h2, .h2 {
     position: absolute;
     width: 310px;
     height: 500px;
-    box-shadow: inset 112px -67px 100px -27px #fff;
-    left: 0;
+    //box-shadow: inset 112px -67px 100px -27px #fff;
+    background: linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1));
+    left: -2px;
     z-index: 100;
+    top: -2px;
   }
 
   &:after {
@@ -134,10 +136,11 @@ h2, .h2 {
     position: absolute;
     width: 310px;
     height: 500px;
-    box-shadow: inset -112px -67px 100px -27px #fff;
-    right: 0;
+    //box-shadow: inset -112px -67px 100px -27px #fff;
+    background: linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1));
+    right: -2px;
     z-index: 100;
-    top: 0;
+    top: -2px;
   }
 }
 
@@ -257,3 +260,6 @@ h2, .h2 {
 }
 
 
+.search-scheme__dropdown-second-column .fade {
+  opacity: 1;
+}
