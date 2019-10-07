@@ -661,9 +661,9 @@
 }
 
 @media (max-width: 1335px) {
-  .dropdown-container.dropdown-container_currency {
-    transform: translate(-100%,15px);
-  }
+  //.dropdown-container.dropdown-container_currency {
+  //  transform: translate(-100%,15px);
+  //}
 
   .dropdown-container.dropdown-container_currency:before {
     left: initial;

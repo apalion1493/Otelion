@@ -39,6 +39,11 @@
 
   .header__menu-li.active {
 
+    .header__menu-link {
+      color: #c2185b;
+      font-weight: 700;
+    }
+
     &:before {
       content: '';
       background-color: #c2185b;
@@ -52,7 +57,7 @@
   .header__menu-link {
     font-size: 18px;
     color: #263238;
-    font-weight: 700;
+    font-weight: 400;
     display: flex;
     align-items: center;
 

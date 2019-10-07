@@ -66,13 +66,13 @@ jQuery(document).ready(function(){
 });
 
 jQuery(function($){
-    $(document).mouseup(function (e){ // событие клика по веб-документу
+    $(document).mouseup(function (e){
         let div1 = $(".search-scheme__choice");
-        let div2 = $(".search-scheme__dropdown");// тут указываем ID элемента
-        if (!div1.is(e.target) // если клик был не по нашему блоку
+        let div2 = $(".search-scheme__dropdown");
+        if (!div1.is(e.target)
             && div1.has(e.target).length === 0
             && !div2.is(e.target)
-            && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+            && div2.has(e.target).length === 0) {
 
             $('.search-scheme__dropdown').removeClass('active');
         }
@@ -80,12 +80,26 @@ jQuery(function($){
 });
 
 function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
+    let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
     tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function openCityTwo(evt, cityName) {
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-two");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks-two");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
